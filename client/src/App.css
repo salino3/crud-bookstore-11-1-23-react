@@ -1,0 +1,179 @@
+
+body{
+  background: black;
+  color: white;
+   /* white-space: nowrap; */
+}
+
+button{
+  border-radius: 10px;
+  padding: 0.5em;
+    font-weight: bold;
+  cursor: pointer;
+  background: aquamarine;
+  color: #FFBE0B;
+
+}
+
+/* Books */
+
+.divTitle{
+ white-space: nowrap;
+ margin: 2em;
+}
+
+.divApp{
+  height: 100vh;
+  padding: 0px 100px;
+  align-items: center;
+  justify-contents: center;
+  text-align: center;
+
+}
+
+.divBooks{
+  display: flex;
+    flex-wrap: wrap;
+     /* distribuye los elementos de manera homogénea */
+    /* justify-content: space-between;  */
+/* distribuye los elementos de manera homogénea y simétrica */
+     justify-content: space-around;
+}
+
+.bookList{
+ 
+  margin: 1em;
+}
+
+img{
+  width: 12em;
+  heigth: auto;
+  object-fit: cover;
+  background-color: aquamarine;
+}
+
+.deleteBtn{
+  border: none;
+  padding: 3px 6px;
+  margin: 5px;
+  background-color: white;
+  border: 1px solid rgb(245, 191, 191);
+  color: rgb(242, 100, 100);
+  
+}
+
+.updateBtn{
+  border: none;
+  padding: 3px 6px;
+  margin: 5px;
+  background-color: white;
+    border: 1px solid rgb(204, 204, 243);
+  color: rgb(139, 139, 234);
+}
+
+/* UpdateBook and AddBook*/
+
+ .container {
+     white-space: nowrap;
+    display: flex;
+    justify-content: center; 
+    height: 100vh;
+}
+
+ .divForm form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30em;
+  align-items: center; 
+  justify-content: center; 
+}
+
+input{
+  width: 22em;
+  height:22px;
+  margin: 1em;
+  border-radius: 5px;
+  padding-left: 0.5em;
+
+}
+
+textarea{
+    width: 22em;
+  min-height:50px;
+  margin: 1em;
+  border-radius: 5px;
+  padding-left: 0.5em;
+}
+
+.formButton{
+  text-align: center;
+  border: none;
+  padding: 10px;
+  background-color: orange;
+
+  color: green;
+  border-radius: 15px;
+  width: 23em;
+
+}
+
+/* DescBook */
+
+.divDescPage{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2em;
+}
+
+.divImgDesc{
+ width: 27em;
+  heigth: auto;
+  object-fit: cover;
+  background-color: aquamarine;
+    padding: 1em;
+  border-radius: 5px;
+  padding-top: 0em;
+
+}
+
+.divImgDesc img{
+ width: 25em;
+  heigth: auto;
+  object-fit: cover;
+  background-color: aquamarine;
+
+}
+
+.divDesc2{
+  display: flex;
+  flex-direction: column;
+    border: solid 3px aquamarine;
+  width: 100%;
+  max-height: 10em;
+  overflow: auto;
+  padding: 1em;
+  padding-top: 0em;
+  border-radius: 5px;
+}
+
+
+.titlePrice{
+    white-space: nowrap;
+    display: grid;
+  grid-template-columns: 30% 30%;
+  gap: 2em;
+ justify-content: center;
+}
+
+.titlePrice h4{
+  margin-top: 1.5em;
+}
+
+
+.divDesc2 h4{
+  max-width:45em;
+  word-wrap: break-word;
+}
+
+

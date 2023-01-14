@@ -20,7 +20,7 @@ CREATE TABLE `test_test`.`books` (
 
 #
 
-After that in the terminal move on backend folder and use the command 'npm start', after that open another terminal move on the client folder and use the command 'npm start'.
+After that in the terminal move on backend folder, run 'npm install' to install the necessary dependencies and use the command 'npm start', after that open another terminal move on the client folder, run 'npm install' to install the necessary dependencies and use the command 'npm start'.
 
 
 ## Project Description

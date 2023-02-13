@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Books from './Books';
 
 const DescBook = () => {
 
@@ -14,7 +13,7 @@ const DescBook = () => {
   const fetchAllBooks = async () => {
     try {
       const res = await axios.get("http://localhost:8080/books/" + id);
-      console.log(res);
+      // console.log(res);
       setBook(res.data);
     } catch (error) {
       console.error(error);

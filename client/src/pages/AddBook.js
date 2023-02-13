@@ -69,7 +69,7 @@ const AddBook = () => {
             ></textarea>
             <input
               type={"text"}
-              placeholder={"Cover"}
+              placeholder={"Cover image"}
               required
               onChange={handleChange}
               name="cover"

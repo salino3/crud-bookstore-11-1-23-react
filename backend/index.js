@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 app.get('/books', (req, res ) => {
     const q = 'SELECT * FROM books'
     if(res){
-    db.query(q, (err, data) => {
+      db.query(q, (err, data) => {
         if (err) {
             return res.json(err)
         }else{
@@ -59,7 +59,6 @@ app.get("/books/:id", (req, res) => {
 app.post('/books', (req, res) => {
     const q =
       "INSERT INTO books (`title`,`author`, `desc`, `cover`, `price`) VALUES (?)";
-    // const values = ["title test 4", "desc from backend", 'cover pic with Postman']
    const values = [
      req.body.title,
      req.body.author,

@@ -34,9 +34,6 @@ button{
 .divBooks{
   display: flex;
     flex-wrap: wrap;
-     /* distribuye los elementos de manera homogénea */
-    /* justify-content: space-between;  */
-/* distribuye los elementos de manera homogénea y simétrica */
      justify-content: space-around;
 }
 

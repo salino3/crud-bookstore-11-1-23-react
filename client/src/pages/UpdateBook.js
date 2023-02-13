@@ -90,7 +90,7 @@ const UpdateBook = () => {
             ></textarea>
             <input
               type={"text"}
-              placeholder={"Cover"}
+              placeholder={"Cover image"}
               required
               onChange={handleChange}
               value={getBook.cover.trim()}

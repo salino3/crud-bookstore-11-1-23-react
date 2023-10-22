@@ -1,19 +1,22 @@
 // npm i express mysql nodemon
 // npm i cors
+// npm i dotenv
 import express from 'express';
 import mysql from 'mysql';
 import cors from 'cors';
+import dotenv from "dotenv";
 
 
 const app = express();
 app.use(cors());
+dotenv.config();
 
 const db = mysql.createConnection({
-    host:"localhost",
-    user: "",
-    password: "",
-    database: "test_test",
-    port: 3306
+  host: "localhost",
+  user: process.env.USER,
+  password: process.env.PSW,
+  database: process.env.DB,
+  port: process.env.PORT,
 }); 
 
 app.use(express.json());

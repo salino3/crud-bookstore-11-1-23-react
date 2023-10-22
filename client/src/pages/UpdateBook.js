@@ -88,7 +88,7 @@ const UpdateBook = () => {
               maxlength="255"
               name="desc"
             ></textarea>
-            <input
+            <input 
               type={"text"}
               placeholder={"Cover image"}
               required
